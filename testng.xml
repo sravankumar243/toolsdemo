@@ -7,4 +7,10 @@
       <class name="org.demo.demomaven.toolstests" />
     </classes>
   </test>
+  <test name="Sample test1">
+   <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="org.demo.demomaven.toolstests" />
+    </classes>
+  </test>
 </suite>

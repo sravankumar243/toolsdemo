@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Sample_test_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="org.demo.demomaven.toolstests" hash-for-method="verifyHomePageHeader">verifyHomePageHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="org.demo.demomaven.toolstests" hash-for-method="verifyHomePageHeader">verifyHomePageHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="org.demo.demomaven.toolstests" hash-for-method="verifyPageHeader1">verifyPageHeader1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,6 +146,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyHomePageHeader">
+                  </a> <!-- verifyHomePageHeader -->
+                  <span class="method-name">verifyHomePageHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageHeader1">
+                  </a> <!-- verifyPageHeader1 -->
+                  <span class="method-name">verifyPageHeader1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyPageHeader1">
                   </a> <!-- verifyPageHeader1 -->
                   <span class="method-name">verifyPageHeader1</span>
@@ -159,6 +183,12 @@
       &lt;class name=&quot;org.demo.demomaven.toolstests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Sample test --&gt;
+  &lt;test name=&quot;Sample test1&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.demo.demomaven.toolstests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sample test1 --&gt;
 &lt;/suite&gt; &lt;!-- Sample test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +201,9 @@
             <ul>
               <li>
                 <span class="test-name">Sample test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sample test1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +229,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyHomePageHeader')
 data.setCell(0, 2, 'org.demo.demomaven.toolstests')
-data.setCell(0, 3, 2650);
+data.setCell(0, 3, 2734);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyPageHeader1')
+data.setCell(1, 1, 'verifyHomePageHeader')
 data.setCell(1, 2, 'org.demo.demomaven.toolstests')
-data.setCell(1, 3, 33);
+data.setCell(1, 3, 2356);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyPageHeader1')
+data.setCell(2, 2, 'org.demo.demomaven.toolstests')
+data.setCell(2, 3, 101);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyPageHeader1')
+data.setCell(3, 2, 'org.demo.demomaven.toolstests')
+data.setCell(3, 3, 28);
 window.suiteTableData['Sample_test_Suite']= { tableData: data, tableDiv: 'times-div-Sample_test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Sample_test_Suite">
               </div> <!-- times-div-Sample_test_Suite -->
             </div> <!-- times-div -->
@@ -242,15 +283,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageHeader</span>
-                <span class="method-start">15668 ms</span>
+                <span class="method-start">27372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPageHeader1</span>
-                <span class="method-start">18319 ms</span>
+                <span class="method-start">29729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Aftersetup</span>
-                <span class="method-start">18353 ms</span>
+                <span class="method-start">29758 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">Beforesetup(chrome)</span>
+                <span class="method-start">31287 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageHeader</span>
+                <span class="method-start">67277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPageHeader1</span>
+                <span class="method-start">70013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">Aftersetup</span>
+                <span class="method-start">70114 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
