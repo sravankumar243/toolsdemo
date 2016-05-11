@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 public class congig {
 	
 	public static WebDriver driver;
-	
+
 	
 	@Parameters("browserName")
 	@BeforeClass
@@ -24,6 +24,7 @@ public class congig {
 			System.setProperty("webdriver.chrome.driver", "D://drivers//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
+		
 		driver.get("http://demoqa.com/");
 		
 		
