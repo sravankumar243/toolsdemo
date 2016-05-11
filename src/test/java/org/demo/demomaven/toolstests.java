@@ -1,9 +1,15 @@
 package org.demo.demomaven;
 
+import java.io.File;
+import java.io.IOException;
+
 import junit.framework.Assert;
 
+import org.apache.commons.io.FileUtils;
 import org.demo.config.congig;
 import org.demo.homepage.homepage;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.Test;
 
 public class toolstests extends congig{
@@ -32,6 +38,15 @@ public class toolstests extends congig{
 		Assert.assertEquals(hp.headerValue(),"Home");
 	}
 	
+	
+	@Test
+	public void takingscreenshots() throws IOException{
+		
+		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src,new File("e://1.jpeg"));
+		
+		
+	}
 	
 	
 
