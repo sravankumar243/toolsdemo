@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Sample test Suite]" parallel="tests">
-  <parameter name="browserName" value="chrome"/>
-  <test name="Sample test(failed)" parallel="tests">
+<suite name="Failed suite [Sample test Suite]">
+  <parameter name="browserName" value="FF"/>
+  <test name="Sample test(failed)">
     <parameter name="browserName" value="FF"/>
     <classes>
-      <class name="org.demo.demomaven.toolstests">
+      <class name="org.demo.demomaven.apachixltests">
         <methods>
           <include name="Aftersetup"/>
-          <include name="verifyPageHeader1"/>
+          <include name="aapachexlpoitests"/>
           <include name="Beforesetup"/>
-          <include name="Beforesetup"/>
-          <include name="verifyHomePageHeader"/>
         </methods>
-      </class> <!-- org.demo.demomaven.toolstests -->
+      </class> <!-- org.demo.demomaven.apachixltests -->
     </classes>
   </test> <!-- Sample test(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->

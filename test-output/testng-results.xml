@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="73464" started-at="2016-05-01T09:14:52Z" finished-at="2016-05-01T09:16:06Z">
+  <suite name="Sample test Suite" duration-ms="31665" started-at="2016-05-30T06:45:20Z" finished-at="2016-05-30T06:45:52Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="31276" started-at="2016-05-01T09:14:52Z" finished-at="2016-05-01T09:15:23Z">
-      <class name="org.demo.demomaven.toolstests">
-        <test-method status="PASS" signature="Beforesetup(java.lang.String)[pri:0, instance:org.demo.demomaven.toolstests@233c0b17]" name="Beforesetup" is-config="true" duration-ms="27368" started-at="2016-05-01T14:44:52Z" finished-at="2016-05-01T14:45:20Z">
+    <test name="Sample test" duration-ms="31665" started-at="2016-05-30T06:45:20Z" finished-at="2016-05-30T06:45:52Z">
+      <class name="org.demo.demomaven.apachixltests">
+        <test-method status="PASS" signature="Beforesetup(java.lang.String)[pri:0, instance:org.demo.demomaven.apachixltests@6ad5c04e]" name="Beforesetup" is-config="true" duration-ms="12527" started-at="2016-05-30T12:15:20Z" finished-at="2016-05-30T12:15:33Z">
           <params>
             <param index="0">
               <value>
@@ -18,46 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Beforesetup -->
-        <test-method status="PASS" signature="verifyHomePageHeader()[pri:0, instance:org.demo.demomaven.toolstests@233c0b17]" name="verifyHomePageHeader" duration-ms="2356" started-at="2016-05-01T14:45:20Z" finished-at="2016-05-01T14:45:22Z">
+        <test-method status="PASS" signature="aapachexlpoitests()[pri:0, instance:org.demo.demomaven.apachixltests@6ad5c04e]" name="aapachexlpoitests" duration-ms="15386" started-at="2016-05-30T12:15:33Z" finished-at="2016-05-30T12:15:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageHeader -->
-        <test-method status="PASS" signature="verifyPageHeader1()[pri:0, instance:org.demo.demomaven.toolstests@233c0b17]" name="verifyPageHeader1" duration-ms="28" started-at="2016-05-01T14:45:22Z" finished-at="2016-05-01T14:45:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageHeader1 -->
-        <test-method status="PASS" signature="Aftersetup()[pri:0, instance:org.demo.demomaven.toolstests@233c0b17]" name="Aftersetup" is-config="true" duration-ms="1503" started-at="2016-05-01T14:45:22Z" finished-at="2016-05-01T14:45:23Z">
+        </test-method> <!-- aapachexlpoitests -->
+        <test-method status="PASS" signature="Aftersetup()[pri:0, instance:org.demo.demomaven.apachixltests@6ad5c04e]" name="Aftersetup" is-config="true" duration-ms="3730" started-at="2016-05-30T12:15:48Z" finished-at="2016-05-30T12:15:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftersetup -->
-      </class> <!-- org.demo.demomaven.toolstests -->
+      </class> <!-- org.demo.demomaven.apachixltests -->
     </test> <!-- Sample test -->
-    <test name="Sample test1" duration-ms="42164" started-at="2016-05-01T09:15:24Z" finished-at="2016-05-01T09:16:06Z">
-      <class name="org.demo.demomaven.toolstests">
-        <test-method status="PASS" signature="Beforesetup(java.lang.String)[pri:0, instance:org.demo.demomaven.toolstests@4563e9ab]" name="Beforesetup" is-config="true" duration-ms="35989" started-at="2016-05-01T14:45:24Z" finished-at="2016-05-01T14:46:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Beforesetup -->
-        <test-method status="PASS" signature="verifyHomePageHeader()[pri:0, instance:org.demo.demomaven.toolstests@4563e9ab]" name="verifyHomePageHeader" duration-ms="2734" started-at="2016-05-01T14:46:00Z" finished-at="2016-05-01T14:46:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageHeader -->
-        <test-method status="PASS" signature="verifyPageHeader1()[pri:0, instance:org.demo.demomaven.toolstests@4563e9ab]" name="verifyPageHeader1" duration-ms="101" started-at="2016-05-01T14:46:02Z" finished-at="2016-05-01T14:46:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageHeader1 -->
-        <test-method status="PASS" signature="Aftersetup()[pri:0, instance:org.demo.demomaven.toolstests@4563e9ab]" name="Aftersetup" is-config="true" duration-ms="3335" started-at="2016-05-01T14:46:02Z" finished-at="2016-05-01T14:46:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Aftersetup -->
-      </class> <!-- org.demo.demomaven.toolstests -->
-    </test> <!-- Sample test1 -->
   </suite> <!-- Sample test Suite -->
 </testng-results>
