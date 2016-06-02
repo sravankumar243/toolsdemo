@@ -1,8 +1,13 @@
 package org.demo.config;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -21,17 +26,19 @@ public class congig {
 	//@BeforeClass
 	//@BeforeTest
 	@BeforeMethod
-	public void Beforesetup(String browserName){
+	public void Beforesetup(String browserName) throws MalformedURLException{
 		if(browserName.equalsIgnoreCase("FF")){
 			driver=new FirefoxDriver();
+			//DesiredCapabilities d=new DesiredCapabilities().firefox();
+			//driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),d);
 			
 		}
 		else if(browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", "D://drivers//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
-		//driver.get("http://demoqa.com/");
-		driver.get("http://www.gmail.com");
+		driver.get("http://demoqa.com/");
+		//driver.get("http://www.gmail.com");
 		
 		
 		

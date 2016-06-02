@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Sample test Suite]">
-  <parameter name="browserName" value="FF"/>
+  <parameter name="browserName" value="chrome"/>
   <test name="Sample test(failed)">
     <parameter name="browserName" value="FF"/>
     <classes>
-      <class name="org.demo.demomaven.apachixltests">
+      <class name="org.demo.demomaven.toolstests">
         <methods>
           <include name="Aftersetup"/>
-          <include name="aapachexlpoitests"/>
+          <include name="Aftersetup"/>
+          <include name="verifyPageHeader1"/>
           <include name="Beforesetup"/>
+          <include name="Beforesetup"/>
+          <include name="verifyHomePageHeader"/>
         </methods>
-      </class> <!-- org.demo.demomaven.apachixltests -->
+      </class> <!-- org.demo.demomaven.toolstests -->
     </classes>
   </test> <!-- Sample test(failed) -->
+  <test name="Sample test1(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="org.demo.demomaven.toolstests">
+        <methods>
+          <include name="Aftersetup"/>
+          <include name="Aftersetup"/>
+          <include name="verifyPageHeader1"/>
+          <include name="Beforesetup"/>
+          <include name="Beforesetup"/>
+          <include name="verifyHomePageHeader"/>
+        </methods>
+      </class> <!-- org.demo.demomaven.toolstests -->
+    </classes>
+  </test> <!-- Sample test1(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->

@@ -19,9 +19,9 @@ public class gmailtests extends congig {
 		System.out.println(p1+"::"+p2);
 		System.out.println(p3);
 		System.out.println(p4);
-		//gl.loginCredentiontials();
+		/*gl.loginCredentiontials();
 		
-		/*gl.emailid.sendKeys("sravank41");
+		gl.emailid.sendKeys("sravank41");
 		
 		gl.next1.click();
 		

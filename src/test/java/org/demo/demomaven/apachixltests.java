@@ -43,7 +43,7 @@ public class apachixltests extends congig {
 	}
 	
 			
-		@Test//(dataProvider="testdata")
+		@Test(dataProvider="testdata")
 		public void aapachexlpoitests() throws IOException{
 			gmaillogin gl=new gmaillogin(driver);
 			
